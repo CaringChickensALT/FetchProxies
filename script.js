@@ -5,7 +5,7 @@ document.getElementById('fetchProxies').addEventListener('click', function() {
 async function fetchProxies() {
     try {
         // Example proxy API (you can replace it with a real one)
-        const response = await fetch('https://api.proxyscrape.com/v2/?request=proxies&protocol=socks5&timeout=10000');
+        const response = await fetch('https://www.proxy-list.download/api/v1/get?type=socks5');
         
         if (!response.ok) {
             throw new Error('Failed to fetch proxies');
